@@ -146,7 +146,26 @@ module.exports = {
     },
     coin: coins.ZEC,
     isZcash: true
-  }, 
+  },
+  bitcoinzTest: {
+    messagePrefix: '\x18BitcoinZ Signed Message:\n',
+    bech32: 'tb',
+    bip32: {
+      public: 0x043587cf,
+      private: 0x04358394
+    },
+    pubKeyHash: 0x1d25,
+    scriptHash: 0x1cba,
+    wif: 0xef,
+    consensusBranchId: {
+      1: 0x00,
+      2: 0x00,
+      3: 0x5ba81b19,
+      4: 0x76b809bb
+    },
+    coin: coins.ZEC,
+    isZcash: true
+  },
   bitcoin: {
     messagePrefix: '\x18Bitcoin Signed Message:\n',
     bech32: 'bc',
